@@ -2,7 +2,7 @@
 ## Features
 
 - Fully responsive web page using **Next.js** and **MUI**.
-- **Live Demo:** [Live Demo]()
+- **Live Demo:** [Live Demo](https://detratorfrontend.netlify.app/)
 
 ---
 
