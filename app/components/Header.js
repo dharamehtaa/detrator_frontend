@@ -13,9 +13,9 @@ import { IconButton } from "@mui/material";
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  backgroundColor: alpha(theme.palette.common.white, 0.20),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: alpha(theme.palette.common.white, 0.20),
   },
   marginLeft: 0,
   width: "100%",
@@ -28,7 +28,7 @@ const Search = styled("div")(({ theme }) => ({
 }));
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
+  padding: theme.spacing(0, 3),
   height: "100%",
   display: "flex",
   alignItems: "center",
@@ -45,7 +45,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     [theme.breakpoints.up("sm")]: {
       width: "30ch",
       "&:focus": {
-        width: "40ch",
+        width: "35ch",
       },
     },
   },
@@ -54,7 +54,14 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        sx={{
+          backgroundColor: "#072e7a", 
+          width: "100%", 
+          margin: 0, 
+        }}
+      >
         <Toolbar>
           <Typography
             variant="h5"

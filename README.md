@@ -8,12 +8,6 @@
 
 ## Installation and Setup
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/YashTirpude/Detrator-assignment.git
-   ```
-
 1. Open terminal and install dependencies:
    ```bash
    npm install
